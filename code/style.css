@@ -1,5 +1,5 @@
 /* Here in the css file you'll write your styling. make sure to link the css file to the html file. If it's linked correctly you should see a light blue background. */
-head {
+body {
   background-color: rosybrown;
   margin: 0;
 }
@@ -10,16 +10,11 @@ header {
   padding-bottom: 30px;
 }
 
-body {
-  background-color: rosybrown;
-  margin: 0;
-}
-
 p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 50x;
   color:rgb(124, 118, 118);
-  text-align: right;
+  text-align: none;
 }
 
 h1 {
@@ -61,47 +56,60 @@ h4 {
   background-color: rgb(124, 118, 118);
   padding-bottom: 350px;
   padding-top: 100px;
-  height: 100px;
+  height: 200px;
   width: 100%;
 }
 
 .transparent-box {
   background-color: azure;
   width: 45%;
+  min-width: 400px;
   height: 500px;
-  padding: 50px 50px 20px 150px;
+  padding: 50px;
   border: 5px dotted rosybrown; 
   position: relative; 
-  top: -25em; 
-  left: +25em;  
+  top: -32.5em; 
+  left: +40em;
+  display: flex;  
 }
 
 .text-box {
   background-color: azure;
   float: right;
   padding: 10px 10px;
-  }
-
-.transparent-box img {
-float: left;
-padding: 0px; 
-width: 50%;
-margin: 0;  
 }
 
-ul#Beschreibung li {
-  font-weight: normal;
+.transparent-box img {
+  padding: 0px; 
+  width: 60%;
+  height: auto;
+  margin: 0;  
+}
+
+.text-box {
+  background-color: azure;
   font-size: 24px;
   color: rgb(124, 118, 118);
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 60x;
+  font-style: normal;
+  font-weight: bold;
+  color:rgb(124, 118, 118)
+}
+
 .colored-stripe {
   background-color: rgb(124, 118, 118);
-  height: 80px;
-  width: 134%;
-  margin-left: -25%;
-  margin-bottom: 0%;
-  position: relative;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  height: 20px;
+  width: 100%;  
 }
 
 .contact-box {
@@ -110,8 +118,8 @@ ul#Beschreibung li {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 25px;
   display: flex;
-  align-items: right;
-  justify-content: right;
+  align-items: left;
+  justify-content: left;
 
   padding: 30px;
   border: 2px;
@@ -122,8 +130,8 @@ ul#Beschreibung li {
 }
 
 .contact-box:hover {
-border: 2px dashed rgb(124, 118, 118);
-border-radius: 20px;
+  border: 2px dashed rgb(124, 118, 118);
+  border-radius: 20px;
 } 
 
 .contact-box:active {
